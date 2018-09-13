@@ -22,6 +22,7 @@
    Filename: lake_styles.css
 
 */
+/* Base */
 
 html {
     background-color: rgb(255, 239, 213);
@@ -29,12 +30,12 @@ html {
 
 section#rightcol {
     background-color: rgb(210, 180, 140);
-    padding: 5px 10px;
+    padding: 5px 13px;
     text-align: right;
 }
 
 nav {
-    background-color: rgb(210, 180, 140)
+    background-color: rgb(210, 180, 140);
 }
 
 footer {
@@ -45,10 +46,66 @@ footer {
 
 aside {
     background-color: rgb(210, 180, 140);
-    padding: 5px 5px;
+    padding: 5px 15px;
+    border-radius: 25px
+}
+
+header>nav {
+    padding: 10px
+}
+
+section#leftcol>h1 {
+    font-family: Champagne;
+    font-size: 5em;
+    font: normal;
+    margin: 0%;
+}
+
+body>section>p {
+    font-family: Arial;
+    font-size: 1.005em
+}
+/* nav */
+
+section#rightcol>nav>ul>li {
+    list-style-type: none;
 }
 
 section>nav>h2 {
     font-family: Dobkin;
     font-size: 1.5em;
 }
+
+nav>ul>li>a:hover {
+    text-decoration: none;
+    color: rgb(42, 116, 165);
+}
+
+nav>ul>li>a:link,:visited {
+    text-decoration: none;
+    color: rgb(138, 86, 17)
+}
+
+aside a:link,:visited {
+    text-decoration: none;
+    color: rgb(138, 86, 17)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
