@@ -23,9 +23,11 @@
 
 */
 /* Base */
+/* Inside this section, all I did was add color to the major parts of the page such as the footer the top and left navigation menu and the whole browser using the html element. The entire body content was also made a single font (Arial). The heading "Welcome" was made a specific font and made larger.   */
 
 html {
     background-color: rgb(255, 239, 213);
+    
 }
 
 section#rightcol {
@@ -34,24 +36,11 @@ section#rightcol {
     text-align: right;
 }
 
-nav {
-    background-color: rgb(210, 180, 140);
-}
-
 footer {
     background-color: rgb(210, 180, 140);
     text-align: center;
     padding: 15px;
-}
-
-aside {
-    background-color: rgb(210, 180, 140);
-    padding: 5px 15px;
-    border-radius: 25px
-}
-
-header>nav {
-    padding: 10px
+    font-style: italic;
 }
 
 section#leftcol>h1 {
@@ -63,49 +52,101 @@ section#leftcol>h1 {
 
 body>section>p {
     font-family: Arial;
-    font-size: 1.005em
+    font-size: 1.005em;
 }
+
+
 /* nav */
+/* For the top navigation menu, I gave it a tan background color with a brown link color, and while hovering over them it turns blue. The headers on the right columm given a different font style (Dobkin) and they're made bigger as well. */
+
+nav {
+    background-color: rgb(210, 180, 140);
+}
 
 section#rightcol>nav>ul>li {
     list-style-type: none;
+    font-family: Arial;
 }
 
-section>nav>h2 {
+section#rightcol>nav>h2 {
     font-family: Dobkin;
     font-size: 1.5em;
+    border-bottom: 3px solid rgb(138, 86, 17);
+}
+
+nav>ul>li>a {
+    color: rgb(138, 86, 17);
+    text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-    text-decoration: none;
-    color: rgb(42, 116, 165);
+    color: rgb(35, 146, 211);
 }
 
-nav>ul>li>a:link,:visited {
-    text-decoration: none;
+header>nav {
+    padding: 10px;
+}
+
+/* blockquote */
+/* For the blockquote, I gave them some opening and closing quotes to make it clear that those words are a quote from a customer. On the left side I gave it a solid border with the matching brown throughout the page.  */
+
+blockquote {
+    font-family: sans-serif;
+    font-style: italic
+}
+
+blockquote {
+    border-left: 10px solid rgb(138, 86, 17);
+    margin: 1.5em 10px;
+    padding: 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+/* aside */
+/* Inside the aside elemnt, I changed the headings to the Champagne font style, made it bigger and aligned it to the center. All the content after that was made in a basic Arial font. For the list on the left side, I gave them a circle list style type and the links are corresponding to the other links from the page with a brown, then while hovering over them it turns blue. I also decided to round them out to make them stand out. */
+aside h1 {
+    font-family: Champagne;
+    font-size: 2em;
+    margin: 5%;
+    text-align: center;
+}
+
+aside h2 {
+    font-family: Arial;
+    font-weight: normal;
+}
+
+aside p {
+    font-size: 0.9em
+}
+
+aside>ul>li {
+    list-style-type: circle;
+}
+
+aside {
+    font-family: Arial;
+}
+
+aside {
+    background-color: rgb(210, 180, 140);
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+aside a {
     color: rgb(138, 86, 17)
 }
 
-aside a:link,:visited {
-    text-decoration: none;
-    color: rgb(138, 86, 17)
+aside a:hover {
+    color: rgb(35, 146, 211);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
